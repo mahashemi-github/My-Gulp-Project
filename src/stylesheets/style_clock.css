@@ -1,0 +1,130 @@
+
+.container-clock-out {
+    padding: 30px;
+    color: white;
+    position: absolute;
+    margin-left: 50px;
+}
+
+.container-clock-in {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 180px;
+    height: 180px;
+    border-radius: 50%;
+    background-color: antiquewhite;
+    box-shadow: -4px -4px 7px #bdbbbb73, 6px 6px 10px rgba(75, 79, 85, 0.288); 
+}
+
+.container-clock-in:after {
+    content: "";
+    height: 90%;
+    width: 90%;
+    border-radius: 50%;
+    background-color: transparent;
+    box-shadow: inset -4px -4px 8px #bdbbbb73, inset 2px 2px 4px rgba(94, 104, 121, .288);
+}
+
+.clock span {
+    position: absolute;
+    inset: 25.5%;
+    color: rgb(97, 89, 93);
+    font-family: Raleway;
+    transform: rotate(calc(30deg * var(--i) + 45deg) );
+}
+
+.clock span b {
+    font-size: 16px;
+    display: inline-block;
+    transform: rotate(calc(-30deg * var(--i) - 45deg));
+}
+
+.mark span {
+    position: absolute;
+    inset:  32.5%;
+    opacity: 0.5;
+    transform: rotate(calc(30deg * var(--ii) + 45deg) );
+}
+
+.mark span b {     
+    height: 5%;
+    width: 5%;
+    border-radius: 50%;
+    display: inline-block;
+    background-color: rgb(95, 93, 93);
+    transform: rotate(calc(-45deg));
+}
+
+.smallmark span {
+    position: absolute;
+    inset: 33%;
+    opacity: 0.5;
+    transform: rotate(calc(6deg * var(--iii) + 45deg));
+}
+
+.smallmark span b {     
+    height: 1.5%;
+    width: 1.5%;
+    border-radius: 50%;
+    display: inline-block;
+    background-color: rgb(95, 93, 93);
+}
+
+.hour,
+.minute,
+.second {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    background-color: #404041;
+    border-radius: 40%;
+    -webkit-transform: rotate(-90deg);
+    -moz-transform: rotate(-90deg);
+    transform: rotate(-90deg);
+    transform-origin: left;
+}
+
+.hour {
+    width: 18%;
+    height: 5px;
+}
+
+.minute {
+    width: 23%;
+    height: 3.5px;
+}
+
+.second {
+    width: 24%;
+    background-color: red; 
+    height: 1.5px;
+}
+
+.pin {
+    position: absolute;
+    height: 5%;
+    width: 5%;
+    border-radius: 50%;
+    opacity:1;
+    background-color: #efeff1;  
+    box-shadow: inset 1px 1px 6px #838282,
+                inset -1px -1px 6px #ffffff;  
+}
+
+.time {
+    position: absolute;
+    margin: 10px;
+    font-size: 22px;
+    top: 210px;
+    left: 60px;
+}
+
+.datee {
+    position: absolute;
+    white-space: nowrap;
+    margin: 10px;
+    font-size: 14px;
+    top: 245px;
+    left: 60px;
+}

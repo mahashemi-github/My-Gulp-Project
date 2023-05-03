@@ -1,0 +1,19 @@
+body {
+  background: linear-gradient(rgb(72, 185, 233), rgb(20, 52, 233));
+  font-family:  system-ui, sans-serif;
+  font-size: 80%;
+}
+#todoImg {
+  padding-top: 50px;
+}
+#todoImg1 {
+  width: 170px; 
+  display: block; 
+  margin-left: 950px;
+  float: left;
+}
+#todoImg2 {
+  width: 180px; 
+  display: block; 
+  margin-left: 1100px;
+}

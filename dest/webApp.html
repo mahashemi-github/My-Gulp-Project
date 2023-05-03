@@ -1,0 +1,211 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <title>To Do List</title>
+    <link rel="stylesheet" href="stylesheets/style.css">
+</head>
+<body>
+
+<!-- Analog Clock - digital Clock - Date App  --------------------------------------->
+<section id="container-analog-digital">
+  <div class="container-clock-out">
+    <div class="container-clock-in">
+
+      <div class="clock">
+        <span style="--i:1;"><b>1</b></span>
+        <span style="--i:2;"><b>2</b></span>
+        <span style="--i:3;"><b>3</b></span>
+        <span style="--i:4;"><b>4</b></span>
+        <span style="--i:5;"><b>5</b></span>
+        <span style="--i:6;"><b>6</b></span>
+        <span style="--i:7;"><b>7</b></span>
+        <span style="--i:8;"><b>8</b></span>
+        <span style="--i:9;"><b>9</b></span>
+        <span style="--i:10;"><b>10</b></span>
+        <span style="--i:11;"><b>11</b></span>
+        <span style="--i:12;"><b>12</b></span>          
+      </div>
+
+      <div class="mark">
+        <span style="--ii:1;"><b></b></span>
+        <span style="--ii:2;"><b></b></span>
+        <span style="--ii:3;"><b></b></span>
+        <span style="--ii:4;"><b></b></span>
+        <span style="--ii:5;"><b></b></span>
+        <span style="--ii:6;"><b></b></span>
+        <span style="--ii:7;"><b></b></span>
+        <span style="--ii:8;"><b></b></span>
+        <span style="--ii:9;"><b></b></span>
+        <span style="--ii:10;"><b></b></span>
+        <span style="--ii:11;"><b></b></span>
+        <span style="--ii:12;"><b></b></span>
+      </div>
+
+      <div class="smallmark">
+        <span style="--iii:1;"><b></b></span>
+        <span style="--iii:2;"><b></b></span>
+        <span style="--iii:3;"><b></b></span>
+        <span style="--iii:4;"><b></b></span>
+        <span style="--iii:6;"><b></b></span>
+        <span style="--iii:7;"><b></b></span>
+        <span style="--iii:8;"><b></b></span>
+        <span style="--iii:9;"><b></b></span>
+        <span style="--iii:11;"><b></b></span>
+        <span style="--iii:12;"><b></b></span>
+        <span style="--iii:13;"><b></b></span>
+        <span style="--iii:14;"><b></b></span>
+        <span style="--iii:16;"><b></b></span>
+        <span style="--iii:17;"><b></b></span>
+        <span style="--iii:18;"><b></b></span>
+        <span style="--iii:19;"><b></b></span>
+        <span style="--iii:21;"><b></b></span>
+        <span style="--iii:22;"><b></b></span>
+        <span style="--iii:23;"><b></b></span>
+        <span style="--iii:24;"><b></b></span>
+        <span style="--iii:26;"><b></b></span>
+        <span style="--iii:27;"><b></b></span>
+        <span style="--iii:28;"><b></b></span>
+        <span style="--iii:29;"><b></b></span>
+        <span style="--iii:31;"><b></b></span>
+        <span style="--iii:32;"><b></b></span>
+        <span style="--iii:33;"><b></b></span>
+        <span style="--iii:34;"><b></b></span>
+        <span style="--iii:36;"><b></b></span>
+        <span style="--iii:37;"><b></b></span>
+        <span style="--iii:38;"><b></b></span>
+        <span style="--iii:39;"><b></b></span>
+        <span style="--iii:41;"><b></b></span>
+        <span style="--iii:42;"><b></b></span>
+        <span style="--iii:43;"><b></b></span>
+        <span style="--iii:44;"><b></b></span>
+        <span style="--iii:46;"><b></b></span>
+        <span style="--iii:47;"><b></b></span>
+        <span style="--iii:48;"><b></b></span>
+        <span style="--iii:49;"><b></b></span>
+        <span style="--iii:51;"><b></b></span>
+        <span style="--iii:52;"><b></b></span>
+        <span style="--iii:53;"><b></b></span>
+        <span style="--iii:54;"><b></b></span>
+        <span style="--iii:56;"><b></b></span>
+        <span style="--iii:57;"><b></b></span>
+        <span style="--iii:58;"><b></b></span>
+        <span style="--iii:59;"><b></b></span>
+      </div>
+
+      <div class="hour"></div>
+      <div class="minute"></div>
+      <div class="second"></div>
+      <div class="pin"></div>  
+          
+    </div>
+    <div class="time"></div>
+    <div class="datee"></div>
+
+  </div>    
+
+</section>  <!-- ****** end of Clock App ******  -->
+
+<!-- Weather App  --------------------------------------------------------------------->
+<div id="body-weather">
+  <div id="container-weather">
+
+    <div class="search">
+      <input type="text" placeholder="Search a city name..." class="search-bar">
+      <button id="search"></button>
+    </div>
+
+    <div class="weather loading">
+        <h2 class="location"> Weather in Tokyo</h2>
+        <h1 class="temperature">30°C</h1>
+        <div class="flex-box"> 
+          <img src="" alt="" class="icon" />  
+          <div class="description">Cloudy</div> 
+        </div>
+        <div class="humidity">Humidity: 60%</div>
+        <div class="wind">Wind speed: 6.0 km/h</div>
+    </div>   
+      
+  </div>
+</div>  <!-- ****** end of Weather App ****** -->  
+
+<!-- To Do List - item Creation Tab  --------------------------------------------------->
+<article id="container-to-do-list">
+
+  <form id="create-tab">
+    <h2>Add to To-Do List: </h2>
+    <div class="tab">Subject:
+      <p><input placeholder="Subject..." id="myInput-subject" name="subject"></p>
+    </div>
+    <div class="tab">Hours/Time Interval:
+      <p><input placeholder="Time Interval, format 08:30-12:00..." id="myInput-time-interval" name="time" pattern="[0-23]{2}:[0-60]{2}-[0-23]{2}:[0-60]{2}" ></p>
+    </div>
+    <div class="tab">Create the following item:
+        <p id="finalization"></p>
+    </div>
+
+    <div style="float:right;">
+      <button type="button" id="prevBtn" onclick="nextPrev(-1)">Previous</button>
+      <button type="button" id="nextBtn" onclick="nextPrev(1)">Next</button>
+      <button type="button" id="create" onclick=" nextPrev(1)">Create</button>
+    </div>
+
+    <div class="step-con">
+      <span class="step"></span>
+      <span class="step"></span>
+      <span class="step"></span>
+    </div>
+  </form>
+
+<!--  To Do List - Created Item list  --------------------------------------------------->
+
+  <article id="created-item">
+    <article id="myITEMS">
+
+  <!-- <section class="item-menu-container">
+
+        <div class="item">
+          <span class="sub">Hit the gym </span>
+          <span class="tim">08:30-12:00</span>
+          <span class="close">&times</span>
+        </div>
+
+        <div class="menu-icon-con">
+          <span class="menu-icon"><i class="fa fa-bars"></i></span>
+        </div>  
+
+        <div class="menu">
+          <span class="allmenus1">Edit Subject: 
+            <input class="edit-sub-input" placeHolder="Edit Subject ...">
+            <button class="edit-sub-done">Done</button>
+            <button class="edit-sub-cancel">Cancel</button>
+          </span>
+          <span class="allmenus2">Edit Time: 
+            <input class="edit-tim-input" placeHolder="Edit time ...">
+            <button class="edit-tim-done">Done</button>
+            <button class="edit-tim-cancel">Cancel</button>
+          </span>
+          <span class="allmenus3">Done/checked</span>
+          <span class="allmenus4">Delete</span>
+        </div>
+
+      </section> -->
+      <!-- onclick="this.classList.toggle('checked')" -->
+
+    </article>   
+  </article>
+
+</article>  <!-- ****** end of To Do List ****** -->
+
+<div id="todoImg"> 
+  <img id="todoImg1" src="./images/point-todo-bg.png" alt="">
+  <img id="todoImg2" src="./images/todolist-bg-remover.png" alt="">
+</div>
+  
+<script src="js/all.js"></script>
+
+</body>
+</html>

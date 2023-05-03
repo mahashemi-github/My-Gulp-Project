@@ -1,0 +1,302 @@
+/*  Style To Do List - item creation tab *******************************************/
+#container-to-do-list {
+    -webkit-user-select: none; /* Safari */
+    -ms-user-select: none; /* IE 10 and IE 11 */
+    user-select: none; /* Standard syntax */
+}
+
+#create-tab {
+    background-color: #cfcfcf;
+    font-size: 17px;
+    margin-top: 25px;
+    margin-left: 420px;
+    padding: 20px;
+    padding-top: 10px;
+    width: 350px;
+    border-radius: 10px;
+    opacity: 0.9;
+    float:left;
+    position: absolute;
+}
+
+#create-tab h2 {
+    text-align: center;  
+    word-wrap: break-word;
+    font-family: Raleway;
+    font-size: 22px;
+}
+
+#create-tab input {
+    padding: 10px;
+    width: 90%;
+    font-size: 15px;
+    border: 1px solid #aaaaaa;
+    border-radius: 5px;
+}
+
+.tab {
+    display: none;
+}
+
+#create-tab button {
+    background-color:rgb(242, 100, 100);
+    color: #ffffff;
+    box-shadow: 3px 3px 2px #aaaaaa;
+    border: none;
+    border-radius:10px;
+    padding: 10px 20px;
+    font-size: 15px;
+    font-family: Raleway;
+    cursor: pointer;
+}
+
+#create-tab button:hover {
+    background-color: rgb(229, 72, 72);
+    box-shadow: 0px 0px 0px #aaaaaa;
+}
+
+#create-tab #prevBtn {
+    background-color: #9e9d9d;
+}
+
+#create-tab #prevBtn:hover {
+    background-color: #8d8c8c;
+    box-shadow: 0px 0px 0px #aaaaaa;
+}
+
+.step-con {
+    text-align: center; 
+    margin-top: 65px;
+}
+
+.step-con .step {
+    height: 8px;
+    width: 8px;
+    margin: 0 2px;
+    background-color: #bdbbbb;
+    border: none;  
+    border-radius: 50%;
+    display: inline-block;
+}
+
+.step-con .step.active {
+    background-color: rgb(242, 100, 100);
+    opacity: 0.8;
+}
+
+.step-con .step.complete {
+    background-color: #8d8c8c;
+}
+
+/* Style To Do List - created item list *******************************************/
+
+#created-item {
+    background-color: #fcfafa;
+    margin: 30px ;
+    width: 455px;
+    border-radius: 10px ;
+    float:left;
+    position: absolute;
+    margin-left: 420px;
+    top: 270px;   
+}
+
+#myITEMS {
+    margin: 0;
+    padding: 0;
+}
+
+#myITEMS section {
+    background: #eee;
+    display: flex;
+    align-items: baseline;
+    border-radius: 10px ;
+}
+
+#myITEMS section:nth-child(odd) {
+    background: #cccccc;
+}
+
+div.item {
+    cursor: pointer;
+    border: 1px solid #aaaaaa;
+    border-radius: 10px ;
+    padding: 12px 28px 12px 23px;
+    font-size: 16px;
+    width: 340px;
+    min-height: 28px;
+    margin-right: 5px;
+    position: relative;
+}
+
+
+div.item:hover {
+    background: #ddd;
+}
+
+div.item.checked {
+    background: #888;
+    color: #fff;
+    text-decoration: line-through;
+}
+
+div.item.checked::before {
+    content: '';
+    position: absolute;
+    border-color: #fff;
+    border-style: solid;
+    border-width: 0 2px 2px 0;
+    top: 10px;
+    left: 16px;
+    transform: rotate(45deg);
+    height: 15px;
+    width: 7px;
+}
+
+.item .sub {
+    padding-left: 20px;
+}
+
+.item .tim {
+    padding-left: 40px;
+}
+
+.close {
+    position: absolute;
+    right: 10px;
+    top: 10px;
+    font-size: 20px;
+    color: rgb(138, 141, 141);
+}
+
+.close:hover {
+    color:darkred;
+    font-weight: bold;
+    font-size: 25px;
+    right: 8px;
+    top: 8px;
+}
+
+.menu-icon-con {
+    text-decoration: none;
+    display: block;
+    padding: 12px 16px 12px 12px;
+    font-size: 18px;
+    border: 1px solid #aaaaaa;
+    border-radius: 10px;
+    box-shadow: 3px 3px 2px #aaaaaa , inset 3px 3px 2px #aaaaaa;
+    color: rgb(165, 167, 167);
+    cursor: pointer;
+    width: fit-content;
+}
+
+.menu-icon-con:hover   {
+    background-color: rgb(144, 179, 245);
+    color: white;
+    box-shadow: 3px 3px 2px rgb(109, 134, 183) , inset 3px 3px 2px rgb(95, 132, 206);
+}
+
+.menu-icon-con.activee {
+    background-color:rgb(144, 179, 245);
+    color: white;
+    box-shadow: 3px 3px 2px rgb(109, 134, 183) , inset 3px 3px 2px rgb(95, 132, 206);
+}
+
+.menu span {
+    display: block;
+    padding: 10px;
+    font-size: 15px;
+    font-weight: 600;
+    text-decoration: none;  
+}
+
+.menu span:not(:first-child) {    
+    border-top: 1px solid rgba(58, 59, 61, 0.6);
+}
+
+.menu {
+    position: absolute;
+    margin-left: 465px;
+    margin-top: 0px;
+    background-color: inherit;
+    border: 1px solid #767575;
+    border-radius: 10px;
+    display: none;
+    box-shadow: rgba(14, 30, 37, 0.5) 0px 2px 4px 0px, rgba(14, 30, 37, 0.7) 0px 2px 16px 0px;
+}
+
+.menu:nth-child(odd) {
+    background:lavender;
+}
+
+.menu.open {
+    display: block;  
+    cursor:pointer;
+} 
+
+.menu.open::before {
+    content: " ";
+    height: 0;
+    position: absolute;
+    top: 8px;
+    width: 0;
+    z-index: 1;
+    left: -9px;
+    border: medium solid lavender;
+    border-width: 10px 10px 10px 0;
+    border-color: transparent lavender transparent transparent;
+}
+
+.menu .allmenus1:hover, .menu .allmenus2:hover, .menu .allmenus3:hover, .menu .allmenus4:hover {
+    background-color: rgb(144, 179, 245);
+    border-radius: 10px;
+} 
+
+.menu .allmenus1:has(.edit-sub-input:focus-visible) {
+    background-color: rgb(144, 179, 245);
+    border-radius: 10px;
+}
+
+.menu .allmenus2:has(.edit-tim-input:focus-visible) {
+    background-color: rgb(144, 179, 245);
+    border-radius: 10px;
+}
+
+.edit-sub-done, .edit-sub-cancel {
+    display: inline;
+    font-size: 12px;
+}
+
+.edit-sub-cancel {
+    margin-left: 4px;
+    font-size: 12px;
+}
+
+.edit-sub-input { 
+    display: block;
+    width: 95px;
+    margin-bottom: 4px;
+    margin-top: 6px;
+}
+
+.edit-tim-done, .edit-tim-cancel {
+    display: inline;
+    font-size: 12px;
+}
+
+.edit-tim-cancel {
+    margin-left: 4px;
+    font-size: 12px;
+}
+
+.edit-tim-input { 
+    display: block;
+    width: 100px;
+    margin-bottom: 4px;
+    margin-top: 6px;
+}
+
+.edit-sub-input:focus, .edit-tim-input:focus {
+    padding: 3px;
+}
+
